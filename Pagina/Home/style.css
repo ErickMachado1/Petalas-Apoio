@@ -233,7 +233,7 @@
   font-size: 20px;
 }
 
-#top-menu-button{
+#top-menu-button {
   height: 45px;
   width: 130px;
   background-color: #fa6390;
@@ -250,7 +250,7 @@
   text-decoration: none;
   bottom: 92.1%;
   position: fixed;
-  color:#ffae64;
+  color: #ffae64;
   background: none;
   text-shadow: 1px 1px 1px black;
 }
