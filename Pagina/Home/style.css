@@ -1,0 +1,256 @@
+* {
+  background-color: #e1c2d4;
+}
+.MainTitle {
+  color: #f8628f;
+  text-align: center;
+  font-family: "Sofia", sans-serif;
+  text-shadow: 1px 1px 2px #f7a6be;
+  font-size: 39px;
+}
+
+.AboutProject {
+  color: #f8628f;
+  text-align: left;
+  bottom: 0%;
+  position: fixed;
+  margin-left: 16%;
+  font-family: "Sofia", sans-serif;
+  text-shadow: 1px 1px 2px #f7a6be;
+  font-size: 32px;
+}
+.About {
+  color: #f8628f;
+  text-align: left;
+  bottom: 0%;
+  position: fixed;
+  margin-left: 36%;
+  font-family: "Sofia", sans-serif;
+  text-shadow: 1px 1px 2px #f7a6be;
+  font-size: 32px;
+}
+.Feedback {
+  color: #f8628f;
+  text-align: left;
+  bottom: 0%;
+  position: fixed;
+  margin-left: 57%;
+  font-family: "Sofia", sans-serif;
+  text-shadow: 1px 1px 2px #f7a6be;
+  font-size: 32px;
+}
+.Contact {
+  color: #f8628f;
+  text-align: left;
+  bottom: 0%;
+  position: fixed;
+  margin-left: 73%;
+  font-family: "Sofia", sans-serif;
+  text-shadow: 1px 1px 2px #f7a6be;
+  font-size: 32px;
+}
+.flower-circle {
+  height: 70px;
+  width: 70px;
+  background-color: #ffae64;
+  border-radius: 50%;
+  margin-left: 48%;
+  bottom: 55%;
+  position: fixed;
+  z-index: 2;
+  box-shadow: 1px 1px 2px black;
+}
+#flower-petal1 {
+  height: 75px;
+  width: 200px;
+  background-color: #fd82a9;
+  margin-left: 48%;
+  bottom: 55%;
+  box-shadow: 1px 1px 2px black;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 1;
+}
+#flower-petal2 {
+  height: 75px;
+  width: 230px;
+  background-color: #fa6390;
+  border-radius: 50%;
+  margin-left: 46%;
+  bottom: 51%;
+  box-shadow: 1px 1px 2px black;
+  transform: rotate(48deg);
+  position: fixed;
+  z-index: 0;
+}
+#flower-petal3 {
+  height: 75px;
+  width: 200px;
+  background-color: #fd82a9;
+  border-radius: 50%;
+  margin-left: 44.6%;
+  transform: rotate(90deg);
+  box-shadow: 1px 1px 2px black;
+  bottom: 48%;
+  position: fixed;
+  z-index: 1;
+}
+#flower-petal4 {
+  height: 75px;
+  width: 200px;
+  background-color: #fa6390;
+  border-radius: 50%;
+  box-shadow: 1px 1px 2px black;
+  margin-left: 42%;
+  bottom: 49.5%;
+  transform: rotate(140deg);
+  position: fixed;
+  z-index: 0;
+}
+#flower-petal5 {
+  height: 75px;
+  width: 200px;
+  background-color: #fd82a9;
+  box-shadow: 1px 1px 2px black;
+  margin-left: 41.3%;
+  bottom: 55%;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 1;
+}
+#flower-petal6 {
+  height: 75px;
+  width: 200px;
+  background-color: #fa6390;
+  border-radius: 50%;
+  margin-left: 42%;
+  bottom: 60%;
+  transform: rotate(39deg);
+  position: fixed;
+  box-shadow: 1px 1px 2px black;
+  z-index: 0;
+}
+#flower-petal7 {
+  height: 75px;
+  width: 200px;
+  background-color: #fd82a9;
+  border-radius: 50%;
+  margin-left: 44.8%;
+  bottom: 62%;
+  transform: rotate(90deg);
+  position: fixed;
+  z-index: 1;
+  box-shadow: 1px 1px 2px black;
+}
+#flower-petal8 {
+  height: 75px;
+  width: 200px;
+  background-color: #fa6390;
+  border-radius: 50%;
+  box-shadow: 1px 1px 2px black;
+  margin-left: 47%;
+  bottom: 60%;
+  transform: rotate(145deg);
+  position: fixed;
+  z-index: 0;
+}
+#pet-text1 {
+  margin-left: 52.5%;
+  bottom: 55%;
+  position: fixed;
+  z-index: 10;
+  background: none;
+  font-family: "Sofia", sans-serif;
+  font-size: 20px;
+}
+#pet-text2 {
+  margin-left: 52.2%;
+  bottom: 47%;
+  transform: rotate(45deg);
+  position: fixed;
+  z-index: 10;
+  background: none;
+  font-family: "Sofia", sans-serif;
+  font-size: 20px;
+}
+#pet-text3 {
+  margin-left: 48.2%;
+  bottom: 46%;
+  transform: rotate(90deg);
+  position: fixed;
+  z-index: 10;
+  background: none;
+  font-family: "Sofia", sans-serif;
+  font-size: 20px;
+}
+#pet-text4 {
+  margin-left: 43.2%;
+  bottom: 47%;
+  transform: rotate(-35deg);
+  position: fixed;
+  z-index: 10;
+  background: none;
+  font-family: "Sofia", sans-serif;
+  font-size: 20px;
+}
+#pet-text5 {
+  margin-left: 43.2%;
+  bottom: 55%;
+  position: fixed;
+  z-index: 10;
+  background: none;
+  font-family: "Sofia", sans-serif;
+  font-size: 20px;
+}
+#pet-text6 {
+  margin-left: 43.9%;
+  bottom: 63%;
+  transform: rotate(45deg);
+  position: fixed;
+  z-index: 10;
+  background: none;
+  font-family: "Sofia", sans-serif;
+  font-size: 20px;
+}
+#pet-text7 {
+  margin-left: 47.9%;
+  bottom: 65%;
+  transform: rotate(-90deg);
+  position: fixed;
+  z-index: 10;
+  background: none;
+  font-family: "Sofia", sans-serif;
+  font-size: 20px;
+}
+#pet-text8 {
+  margin-left: 51.9%;
+  bottom: 63.3%;
+  transform: rotate(-45deg);
+  position: fixed;
+  z-index: 10;
+  background: none;
+  font-family: "Sofia", sans-serif;
+  font-size: 20px;
+}
+
+#top-menu-button{
+  height: 45px;
+  width: 130px;
+  background-color: #fa6390;
+  border-radius: 55%;
+  box-shadow: 1px 1px 2px black;
+  margin-left: 91.5%;
+  bottom: 91.6%;
+  z-index: 0;
+  position: fixed;
+}
+
+.top-menu {
+  margin-left: 93.1%;
+  text-decoration: none;
+  bottom: 92.1%;
+  position: fixed;
+  color:#ffae64;
+  background: none;
+  text-shadow: 1px 1px 1px black;
+}
