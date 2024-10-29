@@ -5,6 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Submissão - Pétalas de Apoio</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
   </head>
-  <body></body>
+  <body>
+    <h1 class="MainTitle">Submissão de Mensagens</h1>
+    <div class="fundo">
+      <form action="" id="formulario">
+        <!-- Inserção da selectbox de Categoria -->
+        <label for="Category" id="LCategoria">
+          <!-- Criação do label centralizado -->
+          Selecione a emoção de sua mensagem!</label
+        >
+        <!-- Select da categoria (emoção, com sua classe em css) -->
+        <select name="Category" id="Category" class="CategSelect">
+          <option value="emoção1">emocao1</option>
+          <option value="emoção2">emocao2</option>
+          <option value="emoção3">emocao3</option>
+          <option value="emoção4">emocao4</option>
+          <option value="emoção5">emocao5</option>
+          <option value="emoção6">emocao6</option>
+          <option value="emoção6">emocao7</option>
+          <option value="emoção6">emocao8</option>
+        </select>
+        <textarea
+          name="Mensagem"
+          placeholder="Digite sua mensagem aqui!"
+          maxlength="250"
+          required
+          id="Mensagem"
+        ></textarea>
+      </form>
+      <button type="reset" id="BTRedefinir">Redefinir</button>
+      <button type="submit" id="BTEnviar">Enviar</button>
+    </div>
+    <a href="/Home/index.html" id="top-menu">Voltar ao Inicio</a>
+    <div id="fundo-top-menu"></div>
+    <!-- div para criar o formato em volta da opção "voltar ao inicio" -->
+  </body>
 </html>
