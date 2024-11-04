@@ -3,44 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio - Pétalas de Apoio</title>
+    <title>Pétalas de Apoio - Inicio</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Sofia"
-    />
+    <script src="script.js"></script>
   </head>
+
   <body>
-    <!-- Criação do titulo principal -->
-    <h1 class="MainTitle">🌸Pétalas de Apoio🌸</h1>
-    <!-- Criação dos "titulos" inferiores -->
-    <a href=""><h2 class="AboutProject">🌸Sobre o Projeto</h2></a>
-    <a href=""><h2 class="About">🌸Informações</h2></a>
-    <a href=""><h2 class="Feedback">🌸Feedback</h2></a>
-    <a href=""><h2 class="Contact">🌸Contato</h2></a>
-    <!-- Criação da flor -->
-    <div class="flower-circle"></div>
-    <div id="flower-petal1"></div>
-    <div id="flower-petal2"></div>
-    <div id="flower-petal3"></div>
-    <div id="flower-petal4"></div>
-    <div id="flower-petal5"></div>
-    <div id="flower-petal6"></div>
-    <div id="flower-petal7"></div>
-    <div id="flower-petal8"></div>
-    <!-- inserção dos textos dentro das petalas -->
-    <h3 id="pet-text1">emoção1</h3>
-    <h3 id="pet-text2">emoção2</h3>
-    <h3 id="pet-text3">emoção3</h3>
-    <h3 id="pet-text4">emoção4</h3>
-    <h3 id="pet-text5">emoção5</h3>
-    <h3 id="pet-text6">emoção6</h3>
-    <h3 id="pet-text7">emoção7</h3>
-    <h3 id="pet-text8">emoção8</h3>
-    <!-- inserção do menu superior-direito -->
-    <div id="top-menu-button"></div>
-    <a href="/Pagina/Submission/index.html" class="top-menu">
-      Envie uma mensagem!
-    </a>
+    <div id="menu" onclick="fecharmenu()">
+      <ul>
+        <h2>Pétalas de Apoio - Menu</h2>
+        <a href="/Submission/index.html" id="Envie">Envie uma mensagem!</a>
+        <br />
+        <br />
+        <a href="" id="Sobre">Sobre</a>
+      </ul>
+    </div>
+    <span id="areamenu" onclick="abrirmenu()"></span>
+    <header>
+      <h1 id="titulo">Pétalas de Apoio</h1>
+      <h3 id="sub-titulo" onclick="abrirmenu()">
+        Clique na lateral esquerda ou aqui para abrir o menu!
+      </h3>
+    </header>
+    <div class="flor-container">
+      <div id="folha-1">
+        <a href="">emoção1</a>
+      </div>
+      <div id="folha-2">
+        <a href="">emoção2</a>
+      </div>
+      <div id="folha-3">
+        <a href="">emoção3</a>
+      </div>
+      <div id="folha-4">
+        <a href="">emoção4</a>
+      </div>
+      <div id="folha-5">
+        <a href="">emoção5</a>
+      </div>
+      <div id="folha-6">
+        <a href="">emoção6</a>
+      </div>
+      <div id="folha-7">
+        <a href="">emoção7</a>
+      </div>
+      <div id="folha-8">
+        <a href="">emoção8</a>
+      </div>
+      <div id="flor-centro"></div>
+    </div>
   </body>
 </html>
