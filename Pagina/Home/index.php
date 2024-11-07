@@ -16,7 +16,7 @@
       <a href="../Submission/index.html" id="Envie">Envie uma mensagem!</a>
       <br />
       <br />
-      <a href="" id="Sobre">Sobre</a>
+      <a href="../About/index.html" id="Sobre">Sobre</a>
     </ul>
   </div>
   <span id="areamenu" onclick="abrirmenu()"></span>
