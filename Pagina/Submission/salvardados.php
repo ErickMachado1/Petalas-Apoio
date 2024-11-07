@@ -3,13 +3,7 @@ $emoção = $_POST["emoção"];
 $mensagem = $_POST["Mensagem"];
 
 
-$servidor = "localhost"; // Nome do servidor
-
-$usuario = "root"; // Nome do usuário
-
-$senha = ""; // Senha de entrada
-
-$banco = "petalas_apoio"; // Nome do banco que será acessado para realizar as operações
+include_once "connect.php";
 
 try {
     $conexao = new PDO("mysql:host=$servidor;dbname=$banco", $usuario, $senha);

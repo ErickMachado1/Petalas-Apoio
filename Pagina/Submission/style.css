@@ -1,68 +1,79 @@
-* {
-  background-color: #e1c2d4;
-}
-.MainTitle {
-  color: #f8628f;
-  text-align: center;
-  font-family: "Sofia", sans-serif;
-  text-shadow: 1px 1px 2px #f7a6be;
-  font-size: 39px;
-}
-.CategSelect {
-  background: none;
-  width: 665.9px;
-  display: block;
-  text-align: center;
-}
-.fundo {
-  background: #fa6390;
-  padding: 50px 100px;
-  border: 1px solid rgba(0, 0, 0, 1);
-  box-shadow: 2px 2px 1px #04052b, 2px 2px 1px 2px rgba(0, 0, 0, 1);
-  width: 35%;
-  height: 80%;
-  margin: auto;
-  margin-top: 7px;
-  margin-bottom: 10px;
+body {
+  background: linear-gradient(to bottom right, #ffc1e3, #ff9ecf);
+  font-family: arial, sans-serif;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  margin: 0;
 }
 
-#LCategoria {
-  display: block;
+.MainTitle {
   text-align: center;
-  color: #b9315a;
-  text-shadow: 2px 1px 1px black;
-  font-family: "sofia", sans-serif;
+  color: #ff4081;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.fundo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 400px;
+  height: auto;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+  gap: 15px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.fundo * {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.fundo p {
+  text-align: left;
 }
 
 #Mensagem {
-  max-width: 99%;
-  max-height: 500px;
-  width: 99%;
-  height: 500px;
-  border: none;
-  font-family: "sofia", sans-serif;
+  min-height: 409px;
+  min-width: 318px;
+  height: 150px;
+  overflow-y: auto;
+  max-width: 318px;
+  max-height: 409px;
 }
-#BTRedefinir {
-  margin-top: 2px;
-  margin-left: 80.9%;
-}
-#top-menu {
-  position: fixed;
-  bottom: 96.5%;
-  margin-left: 0.8%;
-  z-index: 1;
-  background: none;
+
+#fundo-top-menu a {
   text-decoration: none;
-  color: #ffae64;
-  text-shadow: 1px 1px 2px black;
+  background-color: #ff4081;
+  color: #ffffff;
+  border-style: outset;
+  border-color: #f7a6be;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s;
 }
-#fundo-top-menu {
-  height: 45px;
-  width: 130px;
-  background-color: #fa6390;
-  border-radius: 55%;
-  box-shadow: 1px 1px 2px black;
-  z-index: 0;
-  position: fixed;
-  bottom: 95%;
+
+#fundo-top-menu a :hover {
+  background-color: #ff79b0;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .fundo {
+    width: 95%;
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .fundo > * {
+    width: 100%;
+  }
 }
