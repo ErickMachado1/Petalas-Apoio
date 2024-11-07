@@ -20,5 +20,5 @@ $stmt->bindParam(1, $emoção);
 $stmt->bindParam(2, $mensagem);
 $stmt->execute();
 
-header("Location: ../Submission/Obrigado.html");
+header("Location: ./Obrigado.html");
 exit();

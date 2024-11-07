@@ -7,7 +7,7 @@ try {
 
     if ($emotion) {
 
-        $sql = "SELECT * FROM mensagens WHERE emoção = :emotion LIMIT 1";
+        $sql = "SELECT * FROM mensagens WHERE emoção = :emotion ORDER BY RAND() LIMIT 1";
         $stmt = $conexao->prepare($sql);
         $stmt->bindParam(':emotion', $emotion, PDO::PARAM_STR);
         $stmt->execute();
@@ -34,12 +34,13 @@ try {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leitor - Petalas de Apoio</title>
     <link rel="stylesheet" href="style1.css">
+    <link rel="icon" href="../../Img/favicon.ico" type="image/x-icon">
+    <script src="script1.js"></script>
 </head>
 
 <body>
     <div class="fundo">
-
-        <a style="left:28%;position:absolute;top: 90%;text-decoration:none;" href="index.php">Retornar ao inicio</a>
+        <a id="Voltar" href="../Frontend/index.php">Retornar ao inicio</a>
     </div>
 </body>
 

@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #fa6390, #f7396b);
+}
+
+.fundo {
+  background: #ffc74d;
+  padding: 50px 100px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(4, 5, 43, 0.2);
+  width: 35%;
+  height: 80%;
+  margin: auto;
+  margin-top: 7px;
+  margin-bottom: 10px;
+}
+
+.fundo,
+#mensagem {
+  transition: all 1.3s ease;
+}
+
+#mensagem {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  display: flex;
+  left: calc(28% + -10px);
+  top: 3%;
+  overflow-wrap: break-word;
+  width: 43%;
+  max-height: 20vh;
+  overflow-y: auto;
+  margin: 20px auto;
+}
+
+#mensagem::-webkit-scrollbar {
+  width: 8px;
+}
+
+#mensagem::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+}
+
+#mensagem::-webkit-scrollbar-thumb {
+  background: #fa6390;
+  border-radius: 4px;
+}
+
+#Voltar {
+  left: 28%;
+  position: absolute;
+  top: 90%;
+  text-decoration: none;
+  background: #fff;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  margin-top: -10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
