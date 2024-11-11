@@ -94,7 +94,7 @@ body {
 }
 
 #areamenu {
-  width: 100px;
+  width: 30px;
   height: 100%;
   z-index: 1;
   position: fixed;
@@ -126,6 +126,7 @@ body {
   border: 1px solid #ff4081;
   border-radius: 50%;
   transition: transform 0.3s;
+  z-index: 2;
 }
 
 #folha-1,
@@ -200,7 +201,7 @@ body {
 }
 
 #folha-7 {
-  top: calc(50% + -120px);
+  top: calc(50% + -145px);
   left: calc(50% - -6px);
   transform: translate(-50%, -50%) rotate(90deg);
 }
@@ -213,46 +214,53 @@ body {
 
 #folha-1 a {
   left: calc(50% + -30px);
-  bottom: 43%;
+  bottom: 39.2%;
+  z-index: 4;
 }
 
 #folha-2 a {
-  left: calc(50% + -40px);
-  bottom: 47%;
+  left: calc(50% + -23px);
+  bottom: 41%;
+  z-index: 4;
 }
 
 #folha-3 a {
   left: calc(50% + -40px);
-  bottom: 47%;
-  transform: rotate(180deg);
+  bottom: 39%;
+  z-index: 4;
 }
 
 #folha-4 a {
   left: calc(50% + -40px);
-  bottom: 47%;
+  bottom: 33%;
+  z-index: 4;
   transform: rotate(-180deg);
 }
 
 #folha-5 a {
-  left: calc(50% + -40px);
-  bottom: 47%;
+  left: calc(50% + -68px);
+  bottom: 39%;
+  z-index: 4;
 }
 
 #folha-6 a {
-  left: calc(50% + -40px);
-  bottom: 47%;
+  left: calc(50% + -20px);
+  bottom: 35%;
   transform: rotate(-180deg);
+  z-index: 4;
 }
 
 #folha-7 a {
   left: calc(50% + -55px);
-  bottom: 48%;
+  bottom: 37%;
+  z-index: 4;
 }
 
 #folha-8 a {
-  left: calc(50% + -40px);
-  bottom: 47%;
+  left: calc(50% + -50px);
+  bottom: 33%;
   transform: rotate(-180deg);
+  z-index: 4;
 }
 
 #flor-centro {
@@ -261,7 +269,7 @@ body {
   width: 170px;
   height: 170px;
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   transform: translate(-50%, -50%);
   background-color: #ffc74d;
   border-radius: 50%;
@@ -316,4 +324,8 @@ body {
   100% {
     box-shadow: 0 0 10px rgba(255, 199, 77, 0.5);
   }
+}
+#copyright {
+  bottom: 8%;
+  position: absolute;
 }

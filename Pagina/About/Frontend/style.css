@@ -1,11 +1,16 @@
 body {
-  background: linear-gradient(to bottom right, #ffc1e3, #ff9ecf);
+  background: linear-gradient(135deg, #ffc1e3, #ff9ecf, #ff72ba);
   font-family: arial, sans-serif;
   display: flex;
   min-height: 100vh;
   margin: 0;
   justify-content: center;
   align-items: flex-start;
+}
+
+#titulo-div{
+  margin-left: 21%;
+  display: flex;
 }
 
 #titulo {
@@ -23,29 +28,130 @@ body {
   width: 95vw;
   height: 80vh;
   margin: 20px;
-  border-radius: 10px;
-  background-color: #f0f0f0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #333;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+}
+#github-button {
+  margin: 20px auto;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ff4081;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#github-button:hover {
+  background-color: #e6376b;
+  transform: scale(1.05);
+}
+
+#fundo-info {
+  background-color: #fff;
+  width: 80%;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+}
+#fundo-info h3 {
+  font-size: 1.5em;
+  color: #ff4081;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+#fundo-info p {
+  line-height: 1.6;
+}
+
+#Quem,
+#Como,
+#Contato {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#Quem p,
+#Como p,
+#Contato p a {
+  font-size: medium;
+  overflow-x: visible;
+  max-width: 52vw;
+  color: #333;
+}
+
+#Contato p a {
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#Contato p a:hover {
+  color: #ff4081;
+  animation: pulse 0.4s ease infinite alternate;
+}
+
+#voltar {
+  margin: 20px auto;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ff4081;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+#voltar:hover {
+  background-color: #e6376b;
+  transform: scale(1.05);
+}
+
+.botões {
+  display: flex;
+  margin-top: 85vh;
+  gap: 20px;
+  z-index:2
+  /* margin-left: 20vw; */
+  /* margin-bottom: 20px; */
+}
+
+.botões a {
+  text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #333;
-}
-#github-button {
-  display: block;
-  top: 86%;
-  position: absolute;
-  margin: 20px auto;
-  text-decoration: none;
-}
-
-#github-button img {
-  height: 30px;
+  padding: 10px 20px;
+  background-color: #ff4081;
+  color: #fff;
+  font-weight: bold;
   border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-#github-button img:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+@keyframes pulse {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-3px);
+  }
 }

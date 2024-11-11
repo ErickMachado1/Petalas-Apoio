@@ -7,7 +7,7 @@ try {
 
     if ($emotion) {
 
-        $sql = "SELECT * FROM mensagens WHERE emoção = :emotion ORDER BY RAND() LIMIT 1";
+        $sql = "SELECT * FROM mensagens WHERE emocao = :emotion ORDER BY RAND() LIMIT 1";
         $stmt = $conexao->prepare($sql);
         $stmt->bindParam(':emotion', $emotion, PDO::PARAM_STR);
         $stmt->execute();
@@ -40,7 +40,7 @@ try {
 
 <body>
     <div class="fundo">
-        <a id="Voltar" href="../Frontend/index.php">Retornar ao inicio</a>
+        <a id="Voltar" href="http://petalasdeapoio24.infinityfreeapp.com">Retornar ao inicio</a>
     </div>
 </body>
 
