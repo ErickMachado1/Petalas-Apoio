@@ -1,99 +1,75 @@
+
 body {
   background: linear-gradient(135deg, #ffc1e3, #ff9ecf, #ff72ba);
-  font-family: arial, sans-serif;
+  font-family: Arial, sans-serif;
   display: flex;
   min-height: 100vh;
   margin: 0;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
-#titulo-div{
-  margin-left: 21%;
+
+#titulo-div {
   display: flex;
+  justify-content: center;
+  width: 100%;
 }
+
 
 #titulo {
   text-align: center;
   color: #ff4081;
-  font-size: 2.5em;
+  font-size: 2em;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
 }
+
 
 #fundo {
-  position: absolute;
-  top: 50%;
-  left: 49%;
-  transform: translate(-50%, -50%);
-  width: 95vw;
-  height: 80vh;
+  width: 100%;
+  max-width: 1000px;
   margin: 20px;
+  padding: 20px;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  color: #333;
   flex-direction: column;
-  align-content: center;
-  flex-wrap: wrap;
-}
-#github-button {
-  margin: 20px auto;
-  text-decoration: none;
-  justify-content: center;
   align-items: center;
-  padding: 10px 20px;
-  background-color: #ff4081;
-  color: #fff;
-  font-weight: bold;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 12px;
 }
 
-#github-button:hover {
-  background-color: #e6376b;
-  transform: scale(1.05);
-}
 
 #fundo-info {
   background-color: #fff;
-  width: 80%;
+  width: 100%;
+  max-width: 730px;
   text-align: center;
   padding: 20px;
   border-radius: 12px;
 }
+
 #fundo-info h3 {
   font-size: 1.5em;
   color: #ff4081;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-  margin-bottom: 10px;
 }
-#fundo-info p {
-  line-height: 1.6;
-}
+
 
 #Quem,
 #Como,
 #Contato {
   display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   border: 1px solid #e0e0e0;
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-#Quem p,
-#Como p,
-#Contato p a {
-  font-size: medium;
-  overflow-x: visible;
-  max-width: 52vw;
-  color: #333;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 700px;
 }
 
 #Contato p a {
@@ -106,11 +82,16 @@ body {
   animation: pulse 0.4s ease infinite alternate;
 }
 
-#voltar {
-  margin: 20px auto;
-  text-decoration: none;
+
+.botões {
+  display: flex;
+  gap: 20px;
   justify-content: center;
-  align-items: center;
+  margin-top: 30px;
+}
+
+.botões a {
+  text-decoration: none;
   padding: 10px 20px;
   background-color: #ff4081;
   color: #fff;
@@ -119,33 +100,25 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
+
+#voltar {
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #ff4081;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
 #voltar:hover {
   background-color: #e6376b;
   transform: scale(1.05);
 }
 
-.botões {
-  display: flex;
-  margin-top: 85vh;
-  gap: 20px;
-  z-index:2
-  /* margin-left: 20vw; */
-  /* margin-bottom: 20px; */
-}
-
-.botões a {
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #ff4081;
-  color: #fff;
-  font-weight: bold;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
 
 @keyframes pulse {
   from {
@@ -153,5 +126,37 @@ body {
   }
   to {
     transform: translateY(-3px);
+  }
+}
+
+
+@media (max-width: 768px) {
+  #titulo {
+    font-size: 1.8em;
+  }
+
+  #fundo-info h3 {
+    font-size: 1.2em;
+  }
+
+  .botões {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  #titulo {
+    font-size: 1.5em;
+  }
+
+  #fundo-info h3 {
+    font-size: 1em;
+  }
+
+  #Quem p,
+  #Como p,
+  #Contato p {
+    font-size: 0.9em;
   }
 }

@@ -7,7 +7,7 @@
   <title> Inicio - Pétalas de Apoio</title>
   <link rel="stylesheet" href="style.css" />
   <script src="script.js"></script>
-  <link rel="icon" href="../../img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/Pagina/Img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
