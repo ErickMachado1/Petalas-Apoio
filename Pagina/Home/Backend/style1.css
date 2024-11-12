@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   background: linear-gradient(135deg, #fa6390, #f7396b);
+  font-family: "Sour Gummy", sans-serif;
 }
 
 .fundo {
@@ -23,7 +24,6 @@
 }
 
 #mensagem {
-  font-family: "Arial", sans-serif;
   line-height: 1.6;
   color: #333;
   background: rgba(255, 255, 255, 0.9);
@@ -36,8 +36,9 @@
   top: 3%;
   overflow-wrap: break-word;
   width: 43%;
-  max-height: 20vh;
-  overflow-y: auto;
+  height: 79vh;
+  max-height: 78vh;
+  overflow-y: scroll;
   margin: 20px auto;
 }
 

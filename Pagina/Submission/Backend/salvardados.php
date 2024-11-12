@@ -13,12 +13,12 @@ try {
     echo "Conexão falhou: " . $e->getMessage();
 }
 
-$sql = "INSERT INTO mensagens (emoção, mensagem)
+$sql = "INSERT INTO mensagens (emocao, mensagem)
     VALUES (?, ?)";
 $stmt = $conexao->prepare($sql);
 $stmt->bindParam(1, $emoção);
 $stmt->bindParam(2, $mensagem);
 $stmt->execute();
 
-header("Location: ./Obrigado.html");
+header("Location: https://petalasdeapoio24.infinityfreeapp.com/Pagina/Submission/Backend/Obrigado.html");
 exit();

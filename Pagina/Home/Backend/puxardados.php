@@ -36,6 +36,10 @@ try {
     <link rel="stylesheet" href="style1.css">
     <link rel="icon" href="../../Img/favicon.ico" type="image/x-icon">
     <script src="script1.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>

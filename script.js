@@ -27,3 +27,28 @@ if (!getCookie("siteReloaded")) {
   setCookie("siteReloaded", "true", 1);
   window.location.reload(true);
 }
+
+function emoção1() {
+  window.location.href = "./Pagina/Home/Backend/puxardados.php?emotion=medo";
+}
+function emoção2() {
+  window.location.href = "./Pagina/Home/Backend/puxardados.php?emotion=solidao";
+}
+function emoção3() {
+  window.location.href = "./Pagina/Home/Backend/puxardados.php?emotion=tristeza";
+}
+function emoção4() {
+  window.location.href = "./Pagina/Home/Backend/puxardados.php?emotion=indiferenca";
+}
+function emoção5() {
+  window.location.href = "./Pagina/Home/Backend/puxardados.php?emotion=desesperanca";
+}
+function emoção6() {
+  window.location.href = "./Pagina/Home/Backend/puxardados.php?emotion=incerteza";
+}
+function emoção7() {
+  window.location.href = "./Pagina/Home/Backend/puxardados.php?emotion=estresse";
+}
+function emoção8() {
+  window.location.href = "./Pagina/Home/Backend/puxardados.php?emotion=cansaco";
+}

@@ -6,11 +6,21 @@
     <title>Submissão - Pétalas de Apoio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="../../Img/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <h1 class="MainTitle">Submissão de Mensagens</h1>
     <div class="fundo">
-      <form action="../Backend/salvardados.php" method="post" id="formulario">
+      <form
+        action="/Pagina/Submission/Backend/salvardados.php"
+        method="post"
+        id="formulario"
+      >
         <!-- Inserção da selectbox de Categoria -->
         <label for="Category" id="LCategoria">
           <!-- Criação do label centralizado -->
@@ -30,7 +40,7 @@
         <textarea
           name="Mensagem"
           placeholder="Digite sua mensagem aqui!"
-          maxlength="250"
+          maxlength="10000"
           required
           id="Mensagem"
         ></textarea>
