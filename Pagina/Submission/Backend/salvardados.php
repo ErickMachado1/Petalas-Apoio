@@ -13,7 +13,7 @@ try {
     echo "Conexão falhou: " . $e->getMessage();
 }
 
-$sql = "INSERT INTO mensagens (emocao, mensagem)
+$sql = "INSERT INTO naoaprovadas (emocao, mensagem)
     VALUES (?, ?)";
 $stmt = $conexao->prepare($sql);
 $stmt->bindParam(1, $emoção);
